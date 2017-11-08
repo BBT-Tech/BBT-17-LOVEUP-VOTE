@@ -17,4 +17,5 @@ $Config['User'] = 'root';
 $Config['Password'] = '';
 $Config['DBname'] = '';
 
+$Config['AllowRefererPrefix']="";
 $Config['Staging']=true;
