@@ -77,7 +77,7 @@ class vote extends SlimvcController
     {
         try {
             global $Config;
-
+            $headers=$this->helper("global_helper")->getRequestHeaders();
             $allow=$Config['AllowRefererPrefix'];
             if(!empty($headers['REFERER']) && substr($headers['REFERER'],0,strlen($allow))!=$allow)
                 throw new Exception("CSRF detected!");
@@ -91,7 +91,6 @@ class vote extends SlimvcController
             $var_model=$this->model("var_model");
             /** @var voicer_model $voicer_model */
             $voicer_model=$this->model("voicer_model");
-            $headers=$this->helper("global_helper")->getRequestHeaders();
 
 
 
