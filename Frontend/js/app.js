@@ -1,7 +1,7 @@
 const apis = {
-    getVoicersList: '/api/vote/getVoicersList/',
-    getVoteStatus: '/api/user/getVoteStatus/',
-    postVote: '/api/vote/loveUp/'
+    getVoicersList: '/2017_voicers_vote/api/vote/getVoicersList/',
+    getVoteStatus: '/2017_voicers_vote/api/user/getVoteStatus/',
+    postVote: '/2017_voicers_vote/api/vote/loveUp/'
 }
 
 const personList = [{
