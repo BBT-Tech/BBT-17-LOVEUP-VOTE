@@ -275,7 +275,7 @@ export default {
 
     // for development
     // (function() {
-    //     post('/api/staging/setOpenID/', { openID: 4096 }, true, function(res) {}, errorHandle, false);
+    //     post('/2017_voicers_vote/api/staging/setOpenID/', { openID: 4096 }, true, function(res) {}, errorHandle, false);
     // })();
 
     var getList = function(res) {
