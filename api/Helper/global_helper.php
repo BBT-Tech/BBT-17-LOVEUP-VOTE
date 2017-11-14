@@ -11,7 +11,7 @@ class global_helper extends SlimvcHelper
     {
         if(!isset($_SESSION['openid']) || empty($_SESSION['openid']))
         {
-            $target="https://100steps.withcic.cn/2017_voicers_vote/Frontend/index.html";
+            $target="https://100steps.withcic.cn/2017_voicers_vote/frontend/index.html";
             $this->jumpTo("https://100steps.withcic.cn/wechat_bbt/Home/Vote/index?state=" . urlencode($target));
             exit;
         }
