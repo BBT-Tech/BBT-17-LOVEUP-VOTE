@@ -1,5 +1,5 @@
 <template>
-    <div id="app">
+    <div class="app" id="app">
         <header>
             <img class="logo" src="img/logo.png" alt="logo" />
         </header>
@@ -254,8 +254,8 @@ export default {
         function(res) {
           var data = JSON.parse(res);
           if (data.status === 0) {
-            Vue.set(app.hosts[index], "voteCount", data.data.voteCount);
-            Vue.set(app.hosts[index], "selected", true);
+            that.$set(that.hosts[index], "voteCount", data.data.voteCount);
+            that.$set(that.hosts[index], "selected", true);
             if (isDetail) {
               that.introduction.selected = true;
               that.introduction.voteCount = data.data.voteCount;
@@ -275,7 +275,7 @@ export default {
 
     // for development
     // (function() {
-    //     post('/2017_voicers_vote/api/staging/setOpenID/', { openID: 4096 }, true, function(res) {}, errorHandle, false);
+    //     post('/2017_voicers_vote/api/staging/setOpenID/', { openID: 1024 }, true, function(res) {}, errorHandle, false);
     // })();
 
     var getList = function(res) {
@@ -304,7 +304,7 @@ export default {
               break;
             }
           }
-          Vue.set(app.hosts[i], "selected", true);
+          that.$set(that.hosts[i], "selected", true);
         }
       } else {
         alert(data.errorMessage);
